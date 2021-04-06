@@ -5,13 +5,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="icon" href="https://www.flaticon.com/free-icon/tracking_2037358" type="image/png">
+    <title>Library</title>
+    <link rel="icon" href="\Images\favicon.png" type="image/png"/>
+
+    <!-- no closing tag-->
+    <!-- 3 ways to apply Css
+    1. Using style as a tag in the <head> internally 
+     <style>
+        body {
+            color:blue;
+        }
+    </style> 
+    2. Using style as an attribute 
+    <h1 style="color:pink;">
+    3. Using an external styles.css and link it in the header of html-->
+
+    <link rel="stylesheet" href="\styles.css"/>
+
 </head>
-<h1> Hi ! , Welcome </h1>
+<h1> Hi ! , Welcome to my Component Library</h1>
+<header class="hero">
+    <p >The HTML &ltheader&gt element represents introductory content, header can have a logo , authorname , search form and other elements within themselves </p>
+    <img class="hero-img" src="\Images\avatar.svg" alt="My Avatar">
+    <h3 class="hero-heading">This is a <span style="color: var(--primary-color);">Sematic header</span> iside a header</h3>
+</header>
 
 <body>
+    <h2>Typography</h2>
+    <hr>
+    <h2>Headings &lth1&gt - &lth6&gt </h2>
+    <p> In HTML there are 6 levels of Headings each of different sizes and meaning. </p>
+    <h1> H1 : Largest heading level </h1>
+    <h2> H2 : Second largest heading </h2>
+    <h3> H3 : Heading level 3 </h3>
+    <h4> H4 : Heading level 4 </h4>
+    <h5> H5 : Heading level 5 </h5>
+    <h6> H6 : Heading level 6 : Smalleset level Heading </h6>
+    <small> Not a heading but an ever smaller text </small>
+    <hr>
 
+    <h2>Paragraphs</h2>
+    <p> I am a Paragraph of normal text enclosed with in a &ltP&gt tag . This is a <strong>Bold</strong> Text</p>
+    <hr>
+    <h2>Containers</h2>
+    <h3>Normal Container</h3>
+    <div class="centre_cont">
+        The Normal <strong>Center</strong> Container goes till the Specified Width
+    </div>
+    <h3>Fluid Container</h3>
+    <div class="fluid_cont">
+        Fluid container goes all the way across the screen.
+        It is a full width Container with some margin , padding.
+    </div>
+    <hr>
+
+    <h2>Links</h2>
+    <div style="padding-bottom: 0.5rem;">
+        Use an anchor tag to link to another page ,
+        Primary link gets navigated always / a main link used by user and Secondard link that are rarly used by user.</div>
+        <!-- <hr> -->
+        <a class= "links link-primary" href=" /"> Primary Link </a> 
+        <a class= "links link-secondary" href="/"> Secondary Link</a>
+    <hr>
+
+    <h2>Lists</h2>
+    <p> List types : <strong>Unordered list </strong> that are Bulleted and <strong>Order list</strong> are numbered </p>
+    <h3>Unordered List</h3>
+    <p> Modified the ul list to not have bullet points </p>
+    <!--TO modify unordered inline list-->
+    <ul class="no-bullet">
+        <li>Manjo</li>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Pineapple</li>
+    </ul>
+    <!--Modifeld to make list inline-->
+    <h3>Unordered inline list</h3>
+    <ul>
+        <li class="ul-inline">Item one</li>
+        <li class="ul-inline">Item Two</li>
+        <li class="ul-inline">Item Three</li>
+    </ul>
+    <h3> Ordered List</h3> <!-- to be modified-->
+    <ol>
+        <li>India</li>
+        <li>Europe</li>
+        <li>China</li>
+        <li>USA</li>
+    </ol>
+    <h3> Reverse Ordered List</h3>
+    <ol reversed>
+        <li>India</li>
+        <li>Europe</li>
+        <li>China</li>
+        <li>USA</li>
+    </ol>
+    <h2>Inline and Block elements</h2>
+    <h3>Inline Elements </h3>
+    <p>Inline elements Co-exsist alongside of other elements Example : &ltspan&gt<span
+            style="font-weight: bold;">Tag</span> </p>
+    <h3>Block level Elements</h3>
+    <p> Block level elements take the entire block of space for themselves Exapmle a generic container like &ltdiv&gt
+        tag </p>
+    <h3>Semantics tags</h3>
+    <p> Semantics Tags makes it easier for the screen readers to undersatand the meaning of code , helps with SEO </p>
+    <section>
+        <h4>This is a section</h4>
+        </p>
+        The HTML &ltsection&gt element represents a generic standalone section.
+        Section should always have a heading.
+        </p>
+    </section>
+    <h4>This is a Nav Sematic </h4>
+    <div >
+        The HTML &ltnav&gt element's purpose is to provide navigation links, Examples menus, tables of contents, and
+        index can be used in a Nav tag.
+        </div>
+    <nav class="nav-container">
+            <div class="nav-brand">
+                I am Brand </div>
+            <ul class ="no-bullet">
+                <li class="ul-inline "> <a class="li-a active" href="/">Home</a></li>
+                <li class="ul-inline"  > <a class="li-a" href="/">Products</a></li>
+                <li class="ul-inline" ><a class="li-a" href="/">About</a></li>
+            </ul>
+    </nav>
+    <article>
+        <h4> This is an article </h4>
+        <p>The HTML &ltarticle&gt element is a self-contained composition in a document, page, application, or site
+            which exsists independently.
+        </p>
+    </article>
+    <aside>
+        <p> This is an aside tag that represents only a portion of a document that is indirectly related to main content
+            , usually represented as sidebars </p>
+    </aside>
+    <h4>This is a footer </h4>
+    <footer>
+        <div>
+            A footer contains information about the author of the section, copyright data or links to related documents
+            etc .
+        </div>
+    </footer>
 </body>
-
 </html>
