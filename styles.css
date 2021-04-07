@@ -7,14 +7,18 @@
 :root {
     --primary-color: #5DD39E;
     --dark-gray: #6B7280;
+    --off-white: #F3F4F6;
     /* var(--primary-color) */
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
+    /* body has some default marigin from user agent stylesheet */
+    margin: 0rem;
+    /* Contents goes all the way from end to end*/
 }
 
-/* COntainers */
+/* Containers */
 .centre_cont {
     max-width: 600px;
     margin: auto;
@@ -35,8 +39,7 @@ hr {
 /* links */
 .links {
     text-decoration: none;
-    padding: 0.1rem 1rem;
-
+    padding: 0.2rem 1rem;
 }
 
 .link-primary {
@@ -47,12 +50,14 @@ hr {
 }
 
 .link-secondary {
+    /* font-weight: medium; */
+    background-color: var(--off-white);
     color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
 }
 
-/*Bullets*/
+/*Lists*/
 /* Removing bullets from ul */
 .no-bullet {
     list-style: none;
@@ -103,4 +108,50 @@ hr {
     padding-top: 1rem;
     color: var(--dark-gray);
     /* color: gray  Define color in root so it is can be applied genreally and modief only at root to refelt other used palces*/
+}
+
+.hero .hero-heading {
+    text-align: center;
+}
+
+/*Sections*/
+.section {
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+}
+
+.off-white {
+    background-color: var(--off-white);
+}
+
+/* Footer*/
+
+.footer {
+    padding: 2rem 1rem;
+    border-top-right-radius: 1rem;
+    color: white;
+    text-align: center;
+    background-color: var(--primary-color);
+    /* margin-bottom: 1rem; */
+}
+
+.footer a {
+    color: white;
+}
+
+.footer .footer-header {
+    font-weight: bolder;
+    font-size: large;
+}
+
+.footer .social-links {
+    padding-inline-start: 0rem;
+}
+
+/* spaces*/
+.margin-md {
+    margin-bottom: 1rem;
 }
