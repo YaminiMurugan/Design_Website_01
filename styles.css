@@ -39,7 +39,7 @@ hr {
 /* links */
 .links {
     text-decoration: none;
-    padding: 0.2rem 1rem;
+    padding: 0.4rem 1rem;
 }
 
 .link-primary {
@@ -61,6 +61,7 @@ hr {
 /* Removing bullets from ul */
 .no-bullet {
     list-style: none;
+    /* display: block; */
 }
 
 /* Display property used to make block level items to appear inline */
@@ -82,6 +83,7 @@ hr {
 
 .nav-container .li-a {
     color: white;
+    text-decoration: none;
 }
 
 .nav-container .active {
@@ -155,3 +157,8 @@ hr {
 .margin-md {
     margin-bottom: 1rem;
 }
+
+/* Article
+.article a {
+    display: block;
+}*/
