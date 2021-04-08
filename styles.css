@@ -158,7 +158,6 @@ hr {
     margin-bottom: 1rem;
 }
 
-/* Article
-.article a {
-    display: block;
-}*/
+.article {
+    padding: 0.5rem;
+}
